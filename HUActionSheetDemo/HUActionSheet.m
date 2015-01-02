@@ -20,10 +20,11 @@ static HUActionSheet* sheet=nil;
 #define BUTTONWIDTH (110.0)
 #define BUTTONGAP (5.0)
 @implementation HUActionSheet
-- (id)initWithFrame:(CGRect)frame Data:(NSArray*)array
+- (id)initWithData:(NSArray*)array
 {
-    self = [super initWithFrame:frame];
+    self = [super init];
     if (self) {
+        self.frame=[UIScreen mainScreen].bounds;
         //用来对外输出选定项的信号
         self.indexSignal=[RACSubject subject];
         //白色的背景

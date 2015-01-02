@@ -11,6 +11,6 @@
 @interface HUActionSheet : UIWindow
 -(void)show;
 -(void)dissmiss;
-- (id)initWithFrame:(CGRect)frame Data:(NSArray*)array;
+- (id)initWithData:(NSArray*)array;
 @property(strong,nonatomic) RACSubject* indexSignal;
 @end

@@ -24,7 +24,7 @@
 }
 - (IBAction)btnClick:(id)sender {
     NSArray* arr=@[@"aaa",@"bbb",@"ccc",@"ddd",@"eee"];
-    HUActionSheet* ac=[[HUActionSheet alloc] initWithFrame:[UIScreen mainScreen].bounds Data:arr];
+    HUActionSheet* ac=[[HUActionSheet alloc] initWithData:arr];
     [ac show];
     @weakify(self);
     //注意indexSignal为热信号..
