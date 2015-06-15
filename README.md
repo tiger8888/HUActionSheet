@@ -1,4 +1,5 @@
-练习之作....
+####简单的弹出菜单
+---
 用法:
 ```objective-C
     NSArray* arr=@[@"aaa",@"bbb",@"ccc",@"ddd",@"eee"];
